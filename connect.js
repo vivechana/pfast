@@ -1,6 +1,6 @@
 // JavaScript Document
 //run the following code whenever a new pseudo-page is created
-$('#page2').live('pageinit', function(event) {
+$('#page2').live('pageshow', function(event) {
 
     // cache this page for later use (inside the AJAX function)
     var $this = $(this);
