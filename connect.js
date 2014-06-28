@@ -1,6 +1,6 @@
 // JavaScript Document
 //run the following code whenever a new pseudo-page is created
-$('#page2').live('pageshow', function(event) {
+$('#page2').live('pageinit', function(event) {
 
     // cache this page for later use (inside the AJAX function)
     var $this = $(this);
@@ -35,3 +35,7 @@ $('#page2').live('pageshow', function(event) {
         $this.children('[data-role="content"]').append('<ul data-role="listview">' + output.join('') + '</ul>').trigger('create');
     });
 });
+
+$('#page2').live('pageshow', function(event) {
+$this.children('[data-role="content"]').append('<ul data-role="listview">' + output.join('') + '</ul>').trigger('create');
+    });
