@@ -32,7 +32,7 @@ $('#page2').live('pageinit', function(event) {
         // append the output to the `data-role="content"` div on this page as a
         // listview and trigger the `create` event on its parent to style the
         // listview
-        $this.children('[data-role="content"]').append('<ul data-role="listview">' + output.join('') + '</ul>').trigger('create');
+     //   $this.children('[data-role="content"]').append('<ul data-role="listview">' + output.join('') + '</ul>').trigger('create');
     });
 });
 
